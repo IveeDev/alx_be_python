@@ -1,5 +1,11 @@
+# length = 10
+# width = 5
+
+# area = length * width
+# print(f"The area of a rectangle is: {area}"
+
 length = 10
 width = 5
-
 area = length * width
-print(f"The area of a rectangle is: {area}")
+
+print(f"The area of a rectangle: {area}")
