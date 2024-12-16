@@ -1,29 +1,25 @@
+# Prompt for task input
 task = input("Enter your task: ")
+# Ensure priority is in lowercase
 priority = input("Priority (high/medium/low): ").lower()
-in_time = input("Is it time-bound? (yes/no): ").lower()
+time_bound = input("Is it time-bound? (yes/no): ").lower()
 
+# Match case for task priority
 match priority:
     case "high":
-        if in_time == "yes":
-            print(f"Reminder: '{
-                  task}' is a high priority task that requires immediate attention today!")
-        else:
-            print(
-                f"Note: '{task}' is a low priority task. Consider completing it when you have free time.")
+        reminder = f"'{task}' is a high priority task"
     case "medium":
-        if in_time == "yes":
-            print(f"Reminder: '{
-                  task}' is a medium priority task!")
-        else:
-            print(f"Note '{
-                  task}' is a low priority task. Consider completing it when you have free time..")
-
+        reminder = f"'{task}' is a medium priority task"
     case "low":
-        if in_time == "yes":
-            print(f"{task} is a low task")
-        else:
-            print(f"Note: '{
-                  task}' is a low priority task. is a low priority task. Consider completing it when you have free time.")
-
+        reminder = f"'{task}' is a low priority task"
     case _:
-        print("Invalid priority!")
+        reminder = "Invalid priority entered. Please enter 'high', 'medium', or 'low'."
+
+# Modify the reminder based on whether the task is time-bound
+if time_bound == "yes":
+    reminder += " that requires immediate attention today!"
+else:
+    reminder += ". Consider completing it when you have free time."
+
+# Print the final reminder
+print("\nReminder:", reminder)
