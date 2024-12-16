@@ -5,6 +5,10 @@ size = int(input("Enter the size of the pattern: "))
 if size <= 0:
     print("Please enter a positive integer.")
 else:
-    # Draw the pattern using a single for loop
-    for _ in range(size):
-        print("*" * size)
+    row = 0
+    while row < size:
+        # Draw the pattern using a single for loop
+        for _ in range(size):
+            print("*", end="")
+        print()
+        row += 1
