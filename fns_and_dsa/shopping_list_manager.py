@@ -5,7 +5,7 @@ def display_menu():
     print("3. View List")
     print("4. Exit")
     
-    
+# x = True    
 def main():
     shopping_list = []
     while True:
@@ -37,7 +37,7 @@ def main():
         
         elif choice == "4":
             print("Goodbye!")
-            break
+            # break
         else:
             print("Invalid choice. Please try again.")
             
