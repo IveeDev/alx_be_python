@@ -1,0 +1,16 @@
+Add perform_operation function for basic arithmetic operations
+
+- Implemented perform_operation function to handle addition, subtraction, multiplication, and division.
+- Included error handling for division by zero, returning a specific message when it occurs.
+- The function supports 'add', 'subtract', 'multiply', and 'divide' operations.
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#	new file:   __pycache__/arithmetic_operations.cpython-312.pyc
+#	new file:   arithmetic_operations.py
+#	new file:   main.py
+#
