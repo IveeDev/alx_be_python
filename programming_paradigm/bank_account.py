@@ -19,4 +19,11 @@ class BankAccount:
     
     def display_balance(self):
         """Print the current balance in a user-friendly format."""
-        print(f"Current Balance: ${self.account_balance}")
+        print(f"Current Balance: ${self.account_balance:.2f}")
+        
+
+account = BankAccount(100)
+print(account.account_balance)
+account.deposit(100)
+account.withdraw(50)
+account.display_balance()
