@@ -20,12 +20,7 @@ class Circle(Shape):
         self.radius = radius
     
     def area(self):
-        return f"The area of a Circle is: {math.pi * (self.radius)**2}"
+        return f"The area of a Circle is: {math.pi * (self.radius)** 2}"
 
 
 
-shape = Shape()
-rectangle = Rectangle(5, 4)
-cicle = Circle(10)
-print(rectangle.area())
-print(cicle.area())
